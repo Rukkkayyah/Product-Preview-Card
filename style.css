@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --MONTSERRAT: "montserrat";
+    --FRAUNCES: "fraunces";
+    --green-1: hsl(156, 36%, 37%);
+    --green-2: hsl(156, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--cream);
+}
+
+.product-card {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 300px;
+    margin: 20rem 20rem;
+    border: 1px solid var(--white);
+    background-color: var(--white);
+}
+
+.product-image {
+    display: flex;
+    align-items: center;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.category {
+    font-family: var(--MONTSERRAT);
+    color: var(--grey);
+    letter-spacing: 0.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.title {
+    font-family: var(--FRAUNCES);
+    padding-bottom: 1rem;
+}
+
+.description {
+    font-family: var(--MONTSERRAT);
+    color: var(--grey);
+    padding-bottom: 0.5rem;
+}
+
+.price {
+    display: flex;
+    align-items: normal;
+}
+
+.current-price {
+    font-family: var(--FRAUNCES);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--green-1);
+    padding-right: 1rem;
+}
+
+.original-price {
+    font-size: small;
+    padding-top: 1rem;
+    text-decoration-line: line-through;
+}
+
+.add-to-cart {
+    border: 0.5px solid var(--green-1);
+    height: 3rem;
+    border-radius: 6px;
+    background-color: var(--green-1);
+}
+
+.box-icon {
+    color: var(--cream);
+    font-family: var(--FRAUNCES);
+}
